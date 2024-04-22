@@ -1,1 +1,13 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-background-color: #000000;
+  --main-text-color: #00CC14;
+
+  --like-active-color: #FF0000;
+  --like-color: #000000;
+
+  --main-font: 'Inter-variable', sans-serif;
+  --accent-font: 'PressStart2P', system-ui;
+  --font-weight-text: 465;
+  --font-weight-title: 785;
+}

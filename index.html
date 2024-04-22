@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" >
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -10,10 +11,17 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
+
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
+
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
+      <div class="header__logo">&lt;/HTML&gt;</div>
+      <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -40,7 +48,32 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="desk-post">
+        
+        <ul class="desk-post__list">
+          <li class="desk-post__item card">
+            <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+            <img class="card__image" src="./images/post-image.webp" alt="Дом на колесах ночью в лесу">
+            <p class="card__text">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+            <p class="card__text">Место для ваших воспоминаний о начале обучения.</p>
+            <button class="card__button like">Like</button>
+          </li>
+        </ul>
+
+        <button class="desk-post__save-button">
+          <svg class="icon-floppy" viewBox="0 0 40 40">
+            <use href="svg/floppy.svg#floppy">
+          </svg>
+          сохранить на память
+        </button>
+      </section>
+      
+      
+    </main>
+    <footer>
+
+    </footer>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

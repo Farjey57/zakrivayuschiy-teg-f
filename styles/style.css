@@ -13,8 +13,64 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
+html {
+  background-color: var(--main-background-color);
+}
 
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  color: var(--main-text-color);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--main-font);
+  font-variation-settings: 'wght' var(--font-weight-text);
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-family: var(--accent-font);
+  background-color: var(--main-background-color);
+  padding-block-start: 120px;
+  padding-block-end: 25px;
+  margin-block: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 49px;
+  margin-block-end: 20px;
+}
+
+.header__title {
+  font-size: 14px;
+  font-weight: initial;
+  text-transform: uppercase;
+  margin-block-end: 25px;
+}
+
+.icon-floppy {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.theme-menu__button {
+  border: none;
+  background-color: initial;
+}
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+}
+
+.card {
+  background-color: var(--main-background-color);
 }
