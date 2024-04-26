@@ -8,6 +8,8 @@
 :root.theme-dark {
   --main-background-color: #000000;
   --main-text-color: #00CC14;
+  --background-cover-1: #007F0C;
+  --background-cover-2: #004306;
 
   --like-active-color: #FF0000;
   --like-color: #000000;
@@ -21,6 +23,8 @@
 :root.theme-light {
   --main-background-color: #FFFFFF;
   --main-text-color: #000000;
+  --background-cover-1: #E7E7E7;
+  --background-cover-2: #1A1A1A;
 
   --font-weight-text: 400;
   --font-weight-title: 700;
@@ -31,6 +35,8 @@
   :root {
     --main-background-color: #FFFFFF;
     --main-text-color: #000000;
+    --background-cover-1: #E7E7E7;
+    --background-cover-2: #1A1A1A;
   
     --font-weight-text: 400;
     --font-weight-title: 700;
