@@ -81,14 +81,24 @@
           </li>
         </ul>
 
-        <button class="desk-post__save-button button">
+        <button 
+        class="desk-post__save-button button"
+        onclick="window['modal'].showModal()"
+        >
           <svg class="icon-floppy" viewBox="0 0 40 40">
             <use href="svg/floppy.svg#floppy">
           </svg>
           Cохранить на память
         </button>
       </section>
-      
+      <dialog id="modal" class="modal">
+        <svg class="modal__icon-floppy" viewBox="0 0 40 40">
+          <use href="svg/floppy.svg#floppy">
+        </svg>
+        Вставьте дискету, чтобы продолжить
+        <button class="modal__close button" type="button" 
+        onclick="window['modal'].close()">ок</button>
+      </dialog>
       
     </main>
     <footer>
