@@ -176,11 +176,27 @@ main {
   line-height: 1.31;
 }
 
+.card__wrap-like {
+  display: flex;
+  column-gap: 12px;
+  justify-content: end;
+  padding-right: 25px;
+}
+
+.card__icon-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  align-self: center;
+}
+
 .card__like-button {
-  margin-left: auto;
-  margin-right: 25px;
-  display:flex;
   padding: 9px 31px;
+}
+
+.like-icon {
+  display: block;
 }
 
 .button {
