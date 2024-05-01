@@ -4,9 +4,10 @@
   --main-text-color: #00CC14;
   --background-cover-1: #007F0C;
   --background-cover-2: #004306;
+  --text-button-color: var(--main-text-color);
 
-  --like-active-color: #FF0000;
-  --like-color: #000000;
+  --like-checked-color: #FF0000;
+  --like-color: var(--main-background-color);
 
   --main-font: 'Inter-variable', sans-serif;
   --accent-font: 'PressStart2P', system-ui;

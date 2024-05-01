@@ -10,9 +10,10 @@
   --main-text-color: #00CC14;
   --background-cover-1: #007F0C;
   --background-cover-2: #004306;
+  --text-button-color: var(--main-text-color);
 
-  --like-active-color: #FF0000;
-  --like-color: #000000;
+  --like-checked-color: #FF0000;
+  --like-color: var(--main-text-color);
 
   --main-font: 'Inter-variable', sans-serif;
   --accent-font: 'PressStart2P', system-ui;
@@ -25,6 +26,9 @@
   --main-text-color: #000000;
   --background-cover-1: #E7E7E7;
   --background-cover-2: #1A1A1A;
+  --text-button-color: var(--main-background-color);
+
+  --like-color: var(--main-text-color);
 
   --font-weight-text: 400;
   --font-weight-title: 700;
@@ -37,6 +41,9 @@
     --main-text-color: #000000;
     --background-cover-1: #E7E7E7;
     --background-cover-2: #1A1A1A;
+    --text-button-color: var(--main-background-color);
+
+    --like-color: var(--main-text-color);
   
     --font-weight-text: 400;
     --font-weight-title: 700;
