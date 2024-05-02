@@ -361,6 +361,7 @@ main {
 }
 
 .button__text {
+  display: block;
   mix-blend-mode: difference;
   color: var(--text-button-color);
 }
