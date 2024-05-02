@@ -13,6 +13,15 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+@keyframes arrow {
+    0% {
+        transform: translateX(calc(-100% - 4px));
+    }
+    100% {
+        transform: translateX(calc(-100% - 8px))
+    }
+}
+
 @keyframes scale {
     0% {
         scale: 1;

@@ -7,7 +7,7 @@
   --text-button-color: var(--main-text-color);
 
   --like-checked-color: #FF0000;
-  --like-color: var(--main-background-color);
+  --like-color: var(--main-text-color);
 
   --main-font: 'Inter-variable', sans-serif;
   --accent-font: 'PressStart2P', system-ui;

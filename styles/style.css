@@ -54,7 +54,7 @@ main {
   background-color: var(--main-background-color);
   padding-block-start: clamp(7.5rem, 7.148rem + 1.502vw, 8.5rem);
   padding-block-end: 25px;
-  margin-block: 120px;
+  margin-block: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,7 +64,7 @@ main {
 
 .header__logo {
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
-  margin-block-end: 20px;
+  margin-block-end: 21px;
   pointer-events: none;
 }
 
@@ -73,6 +73,10 @@ main {
   font-weight: initial;
   text-transform: uppercase;
   margin-block-end: 25px;
+}
+
+.header__theme-menu {
+  margin-right: -20px;
 }
 
 /* Меню переключения тем theme-menu */
@@ -95,18 +99,45 @@ main {
   cursor: pointer;
   line-height: 1;
   text-transform: uppercase;
+  transition: opacity 0.3s ease;
+  position: relative;
 }
 
 .theme-menu__button:disabled {
   opacity: 0.6;
   pointer-events: none;
-  position: relative;
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
 }
 
 .theme-menu__button:disabled::before {
   content: '▶';
   position: absolute;
   transform: translateX(calc(-100% - 4px));
+  animation: arrow 0.5s ease-in-out infinite alternate-reverse;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+}
+
+.theme-menu__button::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-text-color);
+  bottom: -3px;
+  left: 0;
+  scale: 0 1;
+  transition: scale 0.3s ease;
+  transform-origin: left;
+}
+
+.theme-menu__button:focus-visible::after {
+  scale: 1 1;
 }
 
 /* Основная секция контента desk-post */
@@ -143,6 +174,39 @@ main {
   position: relative;
 }
 
+.card__image {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.card__image_contrast {
+  filter: contrast(40%) brightness(50%);
+}
+
+.card__image_grayscale {
+  filter: grayscale(0.8);
+}
+
+.card__image_saturate {
+  filter: saturate(188%);
+}
+
+.card__image_rotate {
+  filter: hue-rotate(-195deg);
+}
+
+.card__image_sepia {
+  filter: sepia(100%) brightness(50%)
+}
+
+.card__image_invert {
+  filter: invert(0.3);
+}
+
+.card__image_afro {
+  filter: brightness(40%) saturate(190%) hue-rotate(15deg);
+}
+
 .card-label {
   position: absolute;
   font-family: var(--accent-font);
@@ -153,6 +217,7 @@ main {
   mix-blend-mode: hard-light;
   opacity: 0.5;
   user-select: none;
+  z-index: 1;
 
   text-shadow:
   -1px 0 var(--main-background-color), 
@@ -176,11 +241,12 @@ main {
   padding: 25px;
   padding-right: 60px;
   line-height: 1.31;
+  font-stretch: 110%;
 }
 
 .card__wrap-like {
   display: flex;
-  column-gap: 10px;
+  column-gap: 5px;
   justify-content: end;
   padding-right: 25px;
 }
@@ -367,7 +433,7 @@ main {
 }
 
 
-@media (max-width: 375px){
+@media (max-width: 376px){
 
   .icon-floppy {
     width: 28px;
