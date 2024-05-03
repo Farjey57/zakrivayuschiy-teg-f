@@ -338,6 +338,7 @@
         <button 
         class="desk-post__save-button button"
         onclick="window['modal'].showModal()"
+        aria-controls="modal"
         >
         <svg class="icon-floppy" viewBox="0 0 40 40">
           <use href="svg/floppy.svg#floppy"></use>
@@ -348,14 +349,16 @@
         </button>
       </section>
       <dialog id="modal" class="modal">
-        <svg class="modal__icon-floppy" viewBox="0 0 40 40">
-          <use href="svg/floppy.svg#floppy">
-        </svg>
-        Вставьте дискету, чтобы продолжить
-        <button class="modal__close button" type="button" 
-        onclick="window['modal'].close()">
-        <span class="button__text">ок</span>
-      </button>
+        <form method="dialog" class="modal__form">
+          <svg class="modal__icon-floppy" viewBox="0 0 40 40">
+            <use href="svg/floppy.svg#floppy">
+          </svg>
+          Вставьте дискету, чтобы продолжить
+          <button class="modal__close button">
+            <span class="button__text">ок</span>
+          </button>
+        </form>
+        
       </dialog>
       
     </main>

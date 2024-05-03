@@ -10,13 +10,11 @@
   --main-text-color: #00CC14;
   --background-cover-1: #007F0C;
   --background-cover-2: #004306;
+  --background-cover-3: #000000;
   --text-button-color: var(--main-text-color);
 
-  --like-checked-color: #FF0000;
   --like-color: var(--main-text-color);
 
-  --main-font: 'Inter-variable', sans-serif;
-  --accent-font: 'PressStart2P', system-ui;
   --font-weight-text: 465;
   --font-weight-title: 785;
 }
@@ -24,8 +22,9 @@
 :root.theme-light {
   --main-background-color: #FFFFFF;
   --main-text-color: #000000;
-  --background-cover-1: #E7E7E7;
+  --background-cover-1:#E7E7E7;
   --background-cover-2: #1A1A1A;
+  --background-cover-3: #d3d3d3;
   --text-button-color: var(--main-background-color);
 
   --like-color: var(--main-text-color);
@@ -41,6 +40,7 @@
     --main-text-color: #000000;
     --background-cover-1: #E7E7E7;
     --background-cover-2: #1A1A1A;
+    --background-cover-3: #d3d3d3;
     --text-button-color: var(--main-background-color);
 
     --like-color: var(--main-text-color);

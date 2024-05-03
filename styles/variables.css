@@ -4,13 +4,14 @@
   --main-text-color: #00CC14;
   --background-cover-1: #007F0C;
   --background-cover-2: #004306;
+  --background-cover-3: #000000;
   --text-button-color: var(--main-text-color);
 
   --like-checked-color: #FF0000;
   --like-color: var(--main-text-color);
 
   --main-font: 'Inter-variable', sans-serif;
-  --accent-font: 'PressStart2P', system-ui;
+  --accent-font: 'PressStart2P', fantasy;
   --font-weight-text: 465;
   --font-weight-title: 785;
 }
