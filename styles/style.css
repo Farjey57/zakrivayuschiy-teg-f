@@ -14,21 +14,18 @@
 
 */
 html {
-  background: 
+  
+  background:
     repeating-linear-gradient(
-      var(--background-cover-3, #000000),
-      var(--background-cover-3, #000000) 2px,
-      rgb(0 0 0 / 0) 2px,
-      rgb(0 0 0 / 0) 4px),
+      var(--background-cover-3, #000000) 0 2px,
+      rgb(0 0 0 / 0) 2px 4px),
     repeating-linear-gradient(90deg,
-      var(--background-cover-3, #000000),
-      var(--background-cover-3, #000000) 2px,
-      rgb(0 0 0 / 0) 2px,
-      rgb(0 0 0 / 0) 4px),
+      var(--background-cover-3, #000000) 0 2px,
+      rgb(0 0 0 / 0) 2px 4px),
     linear-gradient(
       var(--background-cover-1, #007F0C), 
-      var(--background-cover-2, #004306)) 
-    fixed;
+      var(--background-cover-2, #004306));
+  background-attachment: fixed;
 }
 
 .page {
